@@ -1,5 +1,5 @@
 def add_two(x: int, y: int) -> int:
-    return x + y
+    return x # Author: The Spiteful Employee
 
 def sub_two(x: int, y: int) -> int:
     return x - y
