@@ -20,7 +20,7 @@ def example_product_data():
     return [
             {
                 "product_name": "NiceApp",
-                "price": 12.80,
+                "price": 12.89,
                 "type": "software",
                 "company": "Nice Software Inc.",
             },
@@ -33,13 +33,13 @@ def example_product_data():
         ]
 
 def test_format_data_for_display(example_product_data):
-    assert shop.format_data_for_display(example_product_data) == [
-            "Product Name:\tNiceApp\n",
-            "Price:\t12.80\n",
-            "Type:\tsoftware\n",
-            "Company:\tNice Software Inc.\n",
-            "Product Name:\tGeneric AAA Game\n",
-            "Price:\t50.99\n",
-            "Type:\tgame\n",
-            "Company:\tGeneric AAA Devs\n",
-            ]
+    assert shop.format_data_for_display(example_product_data) == (
+            "Product Name:\tNiceApp\n"
+            "Price:\t12.89\n"
+            "Type:\tsoftware\n"
+            "Company:\tNice Software Inc.\n"
+            "Product Name:\tGeneric AAA Game\n"
+            "Price:\t50.99\n"
+            "Type:\tgame\n"
+            "Company:\tGeneric AAA Devs\n"
+            )
